@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
     res.send("Bem vindo ao meu site!")      //Definindo rota inicial apenas uma resposta por rota
 })
 //Parametro opcional
-app.get("/blog/:artigo?", function (req, res) {       //Segunda rota criada
+app.get("/blog/:artigo", function (req, res) {       //Segunda rota criada
     
     let artigo = req.params.artigo
     if (artigo) {
